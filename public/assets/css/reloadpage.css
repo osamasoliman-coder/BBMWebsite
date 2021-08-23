@@ -1,0 +1,114 @@
+
+/*loader*/
+.loader_bg{
+    position: fixed;
+    z-index: 999999;
+    background: white;
+    width: 100%;
+    height: 100%;
+}
+
+.loader{
+    border: 0 solid transparent;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: calc(50vh - 75px);
+    left: calc(50vw - 75px);
+}
+
+.loader:before , .loader:after{
+    content: '';
+    border: 1em  solid goldenrod;
+    border-radius: 50%;
+    width: inherit;
+    height: inherit;
+    position: absolute;
+    top: 0;
+    left: 0;
+    animation: loader 2s linear infinite;
+    opacity: 0;
+}
+
+.loader:before{
+    animation-delay: 0.5s;
+}
+@keyframes loader{
+    0%{
+        transform: scale(0);
+        opacity: 0;
+    }
+    50%{
+        opacity: 1;
+    }
+    100%{
+        transform: scale(1);
+    }
+
+}
+
+
+
+
+
+/*animation button*/
+
+
+.animated-border-button {
+  background-color: #285ed1;
+  border: none;
+  color: #ffffff;
+  outline: none;
+  padding: 12px 40px 10px;
+  position: relative;
+}
+
+.animated-border-button:before,
+.animated-border-button:after {
+  border: 0 solid transparent;
+  transition: all 0.3s;
+  content: '';
+  height: 0;
+  position: absolute;
+  width: 24px;
+}
+
+.animated-border-button:before {
+  border-top: 2px solid #141414;
+  right: 0;
+  top: -4px;
+}
+
+.animated-border-button:after {
+  border-bottom: 2px solid blue;
+  bottom: -4px;
+  left: 0;
+}
+
+.animated-border-button:hover:before,
+.animated-border-button:hover:after {
+  width: 100%;
+}
+
+
+/*end animation button*/
+
+
+.main-loader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url(http://www.downgraf.com/wp-content/uploads/2014/09/01-progress.gif) center no-repeat white;
+    background-size:50px;
+}
+
+
+
+
+
+
+
