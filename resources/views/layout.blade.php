@@ -40,7 +40,13 @@
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/font-awesome.min.css')}}">
 
     {{--animation--}}
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+{{--    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">--}}
+
+
+    {{--loading page--}}
+    <link rel="stylesheet" href="{{asset('assets/css/loadingpage.css')}}">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+
     @yield('links')
 
     <style>
@@ -52,7 +58,19 @@
 <body style="background-color: #f0f0f0;">
 
 <!--   preload-->
-<div class="main-loader"></div>
+{{--<div class="main-loader"></div>--}}
+
+
+<div class="main-bar">
+    <div class="text">
+    </div>
+    <div class="bar">
+        <div id="fill"></div>
+    </div>
+</div>
+
+
+
 <!--  end preload-->
 
 
@@ -60,7 +78,7 @@
 
 {{--#cdc9c9--}}
 <header id="header" style="height: 100px;background-color: #f0f0f0">
-    <div class=" d-flex justify-content-between align-items-center" style="padding-left: 20px;padding-right: 20px;">
+    <div class=" d-flex justify-content-between align-items-center" style="padding-left: 10px;padding-right: 10px;">
         <div class="logo" style="height: 100px;">
             <img src="assets/img/logos.png" alt="" style="width: 150px;min-height: 100px;min-height: 100px;">
         </div>
@@ -166,32 +184,38 @@
         style="background-color: #f0f0f0;border: 1px solid grey;height: 250px!important;">
 
     <div class="footer-top" style="background-color: #f0f0f0;background-size: cover;height: 250px!important;">
-        <div class="container">
-            <div class="row">
+            <div class="row" style="padding-left: 10px;padding-right: 10px;">
 
                 <div class="col-lg-4 col-md-4 footer-info">
-                    <div
-                        style="border-radius: 50%;background-color: white;width: 200px;height: 160px;margin-top: 20px;">
-                        <img src="{{asset('assets/img/logos.png')}}" alt=""
-                             style="width: 200px!important;height: 150px!important;">
-                    </div>
+                    <img src="{{asset('assets/img/bbmwebsite/Footer_section_2.png')}}" alt=""  style="width: 350px!important;height: 250px!important;margin:10px 10px 10px 0;">
+{{--                    <div--}}
+{{--                        style="border-radius: 50%;background-color: white;width: 200px;height: 160px;margin-top: 20px;">--}}
+{{--                        <img src="{{asset('assets/img/logos.png')}}" alt=""--}}
+{{--                             style="width: 200px!important;height: 150px!important;">--}}
+{{--                    </div>--}}
                 </div>
 
 
                 <div class="col-lg-4 col-md-4 footer-links" style="margin-top: 20px;">
                     <h3 style="color: #304a78">Our Links</h3>
-                    <ul style="margin-top: 15px;">
-                        <li><i class="bx bx-chevron-right" style="color: #304a78"></i> <a href="{{ route('home') }}"
-                                                                                          style="color: #304a78">Home</a>
-                        </li>
-                        <li><i class="bx bx-chevron-right" style="color: #304a78"></i> <a href="{{ route('contact') }}"
-                                                                                          style="color: #304a78">Contact
-                                Us</a></li>
-                        <li><i class="bx bx-chevron-right" style="color: #304a78"></i> <a href="{{ route('about') }}"
-                                                                                          style="color: #304a78">about</a>
-                        </li>
+                    <a href="{{ route('home') }}" style="color: #304a78;margin: 40px 20px 10px 20px;font-weight: bold">Home</a>
+                    <br><br>
+                    <a href="{{ route('contact') }}" style="color: #304a78;margin: 13px 20px 10px 20px;font-weight: bold">Contact us</a>
+                    <br><br>
+                    <a href="{{ route('about') }}" style="color: #304a78;margin: 13px 20px 10px 20px;font-weight: bold">About us</a>
 
-                    </ul>
+{{--                    <ul style="margin-top: 15px;">--}}
+{{--                        <li><i class="bx bx-chevron-right" style="color: #304a78"></i> <a href="{{ route('home') }}"--}}
+{{--                                                                                          style="color: #304a78">Home</a>--}}
+{{--                        </li>--}}
+{{--                        <li><i class="bx bx-chevron-right" style="color: #304a78"></i> <a href="{{ route('contact') }}"--}}
+{{--                                                                                          style="color: #304a78">Contact--}}
+{{--                                Us</a></li>--}}
+{{--                        <li><i class="bx bx-chevron-right" style="color: #304a78"></i> <a href="{{ route('about') }}"--}}
+{{--                                                                                          style="color: #304a78">about</a>--}}
+{{--                        </li>--}}
+
+{{--                    </ul>--}}
                 </div>
 
                 <div class="col-lg-4 col-md-4 footer-contact" style="margin-top: 20px;">
@@ -208,21 +232,15 @@
                                 <p class="contact-txt" style="color: #304a78;text-align: left"><span style="margin-right: 10px;">Location:</span>Abu Dhabi - UAE</p>
                             </li>
                             <li style="color: #304a78">
-                                <p class="contact-txt" style="color: #304a78"><span style="margin-right: 10px;">Mobile:</span>+971566687188</p>
+                                <p class="contact-txt" style="color: #304a78"><span style="margin-right: 10px;">Mobile:</span>+971547919182</p>
                             </li>
                             <li style="color: #304a78">
                                 <p class="contact-txt" style="color: #304a78"><span style="margin-right: 10px;">Email:</span>info@bluemarlin.ae</p>
                             </li>
                         </ul>
                     </div>
-
                 </div>
-
-
             </div>
-
-
-        </div>
     </div>
 </footer><!-- End Footer -->
 <!-- Copyright -->
@@ -282,11 +300,41 @@
     }, 4000);
 </script>
 
-{{--animation--}}
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>
-    AOS.init();
+{{--loading page--}}
+<script type="text/javascript">
+    let progress = 0;
+    document.onreadystatechange = function() {
+        if (document.readyState === "interactive") {
+            let allElement = $("*");
+            let length = allElement.length;
+            for (let i=0;i<length;i++) {
+                set_element(allElement[i], length);
+            }
+        }
+    };
+
+    function set_element(element, totalElement) {
+        let percentage = 100 / totalElement;
+        if ($(element).length === 1) {
+            $("#fill").animate({
+                width: progress + percentage + "%"
+            }, 5, function() {
+                if (document.getElementById("fill").style.width === "100%") {
+                    console.log("ok");
+                    $(".main-bar").fadeOut(500);
+                }
+            });
+            progress = progress + percentage;
+        }
+    }
+
 </script>
+
+{{--animation--}}
+{{--<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>--}}
+{{--<script>--}}
+{{--    AOS.init();--}}
+{{--</script>--}}
 </body>
 
 </html>

@@ -95,6 +95,15 @@ Route::get('our-projects-web', function () {
 })->name('pweb');
 
 
+Route::get('our-projects-branding', function () {
+    return view('ourprojects.branding');
+})->name('pbranding');
+
+Route::get('our-projects-mobile-apps', function () {
+    return view('ourprojects.branding');
+})->name('pmobile');
+
+
 //contact from contact page
 Route::get('contact-us', function () {
     return view('contact');
