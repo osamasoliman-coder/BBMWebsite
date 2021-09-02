@@ -61,13 +61,13 @@
 {{--<div class="main-loader"></div>--}}
 
 
-<div class="main-bar">
-    <div class="text">
-    </div>
-    <div class="bar">
-        <div id="fill"></div>
-    </div>
-</div>
+{{--<div class="main-bar">--}}
+{{--    <div class="text">--}}
+{{--    </div>--}}
+{{--    <div class="bar">--}}
+{{--        <div id="fill"></div>--}}
+{{--    </div>--}}
+{{--</div>--}}
 
 
 

@@ -65,7 +65,9 @@
 
             <div class="section-title" data-aos="fade-up">
                 <div class="section-title">
-                    <h1 id="clients_title" style="font-size: 17px;">WHO <br>WE<br>ARE</h1>
+                    <div class="circle" style="margin-top: 15px;">
+                        <span>WHO WE ARE</span>
+                    </div>
                 </div>
             </div>
 
@@ -88,7 +90,9 @@
 
                 <div class="section-title" data-aos="fade-up" style="margin-top: 20px;">
                     <div class="section-title animate__animated animate__fadeInUp" data-aos="fade-up">
-                        <h1 id="servise_title">SERVICES</h1>
+                        <div class="circle" style="margin-top: 15px;">
+                            <span>SERVICES</span>
+                        </div>
                     </div>
                 </div>
 
@@ -235,7 +239,10 @@
 
                 <div class="section-title" data-aos="fade-up" style="margin-top: 20px;">
                     <div class="section-title animate__animated animate__fadeInUp" data-aos="fade-up">
-                        <h1 id="clients_title">OUR <br><br>CLIENTS</h1>
+                        <div class="circle">
+                            <span>OUR CLIENTS</span>
+                        </div>
+
                     </div>
 
                 </div>
@@ -293,7 +300,9 @@
         <section>
             <div class="section-title" style="margin-top: 20px;">
                 <div class="section-title" data-aos="fade-up">
-                    <h2 id="clients_title">Contact<br><br>Us</h2>
+                    <div class="circle">
+                        <span>CONTACT US</span>
+                    </div>
                 </div>
 
             </div>

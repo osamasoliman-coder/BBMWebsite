@@ -1662,20 +1662,32 @@ section {
     font-weight: bold;
 }
 
-#clients_title{
-    background-color: #304A78;
-    border: none;
+/*#clients_title{*/
+/*    background-color: #304A78;*/
+/*    border: none;*/
+/*    color: white;*/
+/*    padding: 30px;*/
+/*    height: 100px;*/
+/*    padding-top: 25px;*/
+/*    text-align: center;*/
+/*    text-decoration: none;*/
+/*    display: inline-block;*/
+/*    font-size: 16px;*/
+/*    margin: 4px 2px;*/
+/*    border-radius:50%;*/
+/*    font-weight: bold;*/
+/*}*/
+.circle {
+    width: 160px;
+    height: 160px;
+    line-height: 160px;
+    border-radius: 50%;
+    font-size: 20px;
     color: white;
-    padding: 30px;
-    height: 100px;
-    padding-top: 25px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    border-radius:50%;
     font-weight: bold;
+    text-align: center;
+    background: #304A78;
+    display: inline-block;
 }
 .center {
     display: flex;
